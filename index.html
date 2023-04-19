@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soil Pollution | Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Header Logo -->
+            <div id="logo_div"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVzhcds2k21otPakPHEsmn_IdDagvuIT4jQ&usqp=CAU" alt="Soil Pollution Logo" id="logo"></div>
+
+            <!-- Links -->
+            <!-- Link 1 - Home -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="index.html" class="links">
+                        <p><i class="ri-home-2-fill"></i> &nbsp;Home</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 2 - Effects -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="effects.html" class="links">
+                        <p><i class="ri-article-fill"></i> &nbsp;Effects</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 3 - Solutions -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="solutions.html" class="links">
+                        <p><i class="ri-tools-fill"></i> &nbsp;Solutions</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 4 - News -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="news.html" class="links">
+                        <p><i class="ri-newspaper-fill"></i> &nbsp;News</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 5 - Contact -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="contact.html"class="links">
+                        <p><i class="ri-phone-fill"></i> &nbsp;Contact</p>
+                    </a>
+                </span>
+            </div>
+        </header>
+
+        <!-- Spacing -->
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <main>
+            <!-- Main Cover Image -->
+            <div class="box">
+                <img src="https://www.swcs.org/media/cms/Seedlingweb_DFA34667D152D.jpg" width="250" height="350" alt="Main Cover Pic" id="cover_pic">
+            </div>
+
+            <br> 
+
+            <!-- Global Warming Introduction Paragrapgh -->
+            <section>
+                <div  class="global_para">
+                    <img src="https://t4.ftcdn.net/jpg/04/31/93/59/360_F_431935918_ZfTfSDfzFPN0CfuwdKAhcvGF4O0xTUGs.jpg" alt="Soil Pollution" id="global_para_pic">
+                    <h1>Soil Pollution</h1>
+                    <p>It is a serious environmental concern since it harbours many health hazards. For example, exposure to soil containing high concentrations of benzene increases the risk of contracting leukaemia. An image detailing the discolouration of soil due to soil pollution is provided below.
+                        It is important to understand that all soils contain compounds that are harmful/toxic to human beings and other living organisms. However, the concentration of such substances in unpolluted soil is low enough that they do not pose any threat to the surrounding ecosystem. When the concentration of one or more such toxic substances is high enough to cause damage to living organisms, the soil is said to be contaminated.</p>
+                    
+                    <a href="https://byjus.com/chemistry/soil-pollution/#:~:text=Soil%20pollution%20refers%20to%20the,the%20risk%20of%20contracting%20leukaemia.">
+                        <span class="more_info_box">
+                            More...
+                        </span>
+                    </a>
+                </div>
+            </section>
+            
+            <br>
+            <br>
+            <br>
+
+            <hr>
+
+            <!-- It's Causes -->
+            <section>
+                <div class="causes">
+                    <h2 id="causes_head">Causes</h2>
+
+                    <!-- Type 1 Causes -->
+                    <div class="man_cause">
+                        <h3>Man-Made Causes</h3>
+                        <ul>
+                            <li>Deforestation</li>
+                            <li>Industrial Waste</li>
+                            <li>Excessive use of fertilisers and pesticides</li>
+                            <li>Garbage pollution.</li>
+                            <li>Overgrazing</li>
+                            <li>Heavy Machinery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Type 2 Causes -->
+                    <div class="natural_cause">
+                        <h3>Natural Causes</h3>
+                        <ul>
+                            <li>Loss of organic carbon</li>
+                            <li>Increased salt content</li>
+                            <li>Climate change</li>
+                            <li>Forest Blazes</li>
+                        </ul>
+                    </div>
+
+                    <!-- Causes Section Pic -->
+                    <img src="https://i.pinimg.com/736x/01/4d/d9/014dd9c7d56120105cd5f57784c8e51f.jpg" alt="Causes_pic" id="cause_pic">
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- Carbon Calculator -->
+            <section>
+                <div class="carb_cal">
+                    <img src="images/co2_cal_logo.png" alt="Carbon Calculator Icon" id="carb_cal_pic">
+                    <h2>Carbon Calculator</h2>
+                    <p>A carbon footprint is the total amount of greenhouse gases (including carbon dioxide and methane) that are generated by our actions.</p>
+                    <br>
+                    <button onclick="calculate()" class="more_info_box">Calculate</button>
+                    <h3 id = "carbon"></h3>
+                </div>
+            </section>
+        </main>
+
+        <br>
+        
+        <!-- Footer -->
+        <footer>
+            &copy; Soil Pollution | <em>"Save earth today to survive tomorrow."</em>
+        </footer>
+    </body>
+
+    <!-- JavaScript -->
+    <script>
+        function calculate() {
+        var electricity = prompt("Enter the monthly electricity bill ");
+        var gas = prompt("Enter the monthly gas bill ");
+        var oil = prompt("Enter the monthly oil bill ");
+        var milage = prompt("Enter the average annual milage of your vehicle ");
+        var plane1 = prompt("Enter the no of flights in which you have travelled for 4 or less than 4 hours in the last year ");
+        var plane2 = prompt("Enter the no of flights in which you have travelled for more than 4 hours in the last year");
+        var paper = prompt("Enter y if you recycle paper or any other key if you don't recycle the paper ");
+        
+        var add1, add2;
+
+        if(paper=="y") {
+        add1 = 184;
+        } else {
+        add1 = 0;
+        }
+        
+        var lead = prompt("Enter y if you recycle aluminium and lead, or any other key if you don't recycle the aluminium or lead ");
+        if (lead=="y") {
+        add2 = 166;
+        } else {
+        add2 = 0;
+        }
+        
+        var foot = ((electricity*105)+(gas*105)+(oil*113)+(milage*0.79)+(plane1*1100)+(plane2*4400)+add1+add2)/10000;
+        
+        document.getElementById("carbon").innerHTML="Your carbon footprint is "+foot+" tons.";
+        }
+    </script>
+</html>
